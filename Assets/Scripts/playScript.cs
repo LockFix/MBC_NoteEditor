@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -11,6 +13,7 @@ public class playScript : MonoBehaviour
     public Slider playBar;
     public GameObject forwardButton;
     public GameObject backwardButton;
+    public TMP_Text presentTimeText;
 
     private InputActionAsset inputActions;
     private InputAction key1;
@@ -71,6 +74,16 @@ public class playScript : MonoBehaviour
         }
     }
 
+    public void onStopButton()
+    {
+        Debug.Log("Audio stopped");
+
+        audioSource.Stop();
+        pnpState = 0;
+        playBar.value = 0;
+        pnpButton.GetComponent<Image>().sprite = playImage;
+    }
+
     public void onForwardButton()
     {
         float foTime = audioSource.time + 10;
@@ -89,10 +102,21 @@ public class playScript : MonoBehaviour
     
     IEnumerator progressing()
     {
-        while(audioSource.isPlaying)
+        while (audioSource.isPlaying)
         {
             playBar.value = audioSource.time;
             yield return null;
+            if (audioSource.time < 3600)
+            {
+                presentTimeText.text = ((int)audioSource.time / 60).ToString() + ":" + ((int)audioSource.time % 60).ToString();
+            }
+            else
+            {
+                presentTimeText.text = ((int)audioSource.time / 3600).ToString() + ":" + ((int)audioSource.time % 3600 / 60).ToString() + ":" + ((int)audioSource.time % 3600 % 60).ToString();
+            }
+
+            yield return null;
         }
+        if (audioSource.time == audioSource.clip.length) playBar.value = 0; 
     }
 }

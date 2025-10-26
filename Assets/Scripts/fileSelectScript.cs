@@ -18,7 +18,10 @@ public class fileSelectScript : MonoBehaviour
     public Button forwardButton;
     public Button backButton;
     public Button pnpButton;
+    public Button stopButton;
     public TMP_Text selectedMusicText; //선택한 음악 파일의 이름을 보여줄 텍스트
+    public TMP_Text finalTimeText;
+    public Slider playBar;
 
     private Slider progressBar; //진행바
     private TMP_Text value; //진행 텍스트
@@ -91,10 +94,34 @@ public class fileSelectScript : MonoBehaviour
                 audioSource.clip = audioClip;
             }
         }
-
-        loadingPanel.SetActive(false);
         pnpButton.interactable = true;
         backButton.interactable = true;
         forwardButton.interactable = true;
+        stopButton.interactable = true;
+
+        playBar.maxValue = audioClip.length;
+
+        int hour = 0;
+        int min = 0;
+        int second = 0;
+
+        if (audioClip.length < 3600)
+        {
+            min = (int)audioClip.length / 60;
+            second = (int)audioClip.length % 60;
+
+            finalTimeText.text = min + ":" + second;
+        }
+        else
+        {
+            hour = (int)audioClip.length / 3600;
+            min = (int)audioClip.length % 3600 / 60;
+            second = (int)audioClip.length % 3600 % 60;
+
+            finalTimeText.text = hour + ":" + min + ":" + second;
+        }
+
+        loadingPanel.SetActive(false);
+        
     }
 }
