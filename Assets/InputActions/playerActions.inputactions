@@ -1,0 +1,107 @@
+{
+    "version": 1,
+    "name": "playerActions",
+    "maps": [
+        {
+            "name": "NoteActions",
+            "id": "09030f9e-f36f-4fc1-accc-585ee3041307",
+            "actions": [
+                {
+                    "name": "firstKey",
+                    "type": "Button",
+                    "id": "9f366cfd-ded4-4b8d-82a1-785dbd5e3484",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "secondKey",
+                    "type": "Button",
+                    "id": "73709ee7-2303-47a6-8992-4ebcd4807ad5",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "thirdKey",
+                    "type": "Button",
+                    "id": "5037aa65-e229-485e-bf32-f1096e885e5f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "fourthKey",
+                    "type": "Button",
+                    "id": "a09ebfe3-cc6c-4203-badf-4a5943efacce",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "284143b9-4afd-4b3a-93af-f0549f046688",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "firstKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "edde0b8f-61f3-4b34-9884-b0e829d6aff1",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "secondKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b4074368-8869-4455-8b3b-f38830d0e717",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "thirdKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "35bb0ace-0d6d-45ed-a304-06fd7c591e73",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "fourthKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "PC",
+            "bindingGroup": "PC",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
