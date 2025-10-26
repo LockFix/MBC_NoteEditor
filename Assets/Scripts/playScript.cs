@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -55,12 +56,11 @@ public class playScript : MonoBehaviour
     {
         Debug.Log(settingButtonScript.MODE);
 
-        backwardButton.SetActive(true);
-        forwardButton.SetActive(true);
         if (pnpState == 0)
         {
             pnpState = 1;
             audioSource.Play();
+            StartCoroutine(progressing());
             pnpButton.GetComponent<Image>().sprite = pauseImage;
         }
         else
@@ -73,11 +73,26 @@ public class playScript : MonoBehaviour
 
     public void onForwardButton()
     {
-        
+        float foTime = audioSource.time + 10;
+
+        if (foTime > audioSource.clip.length) foTime = audioSource.clip.length;
+        audioSource.time = foTime;
     }
-    
+
     public void onBackwardButton()
     {
-        
+        float backTime = audioSource.time - 10;
+
+        if (backTime < 0) backTime = 0;
+        audioSource.time = backTime;
+    }
+    
+    IEnumerator progressing()
+    {
+        while(audioSource.isPlaying)
+        {
+            playBar.value = audioSource.time;
+            yield return null;
+        }
     }
 }

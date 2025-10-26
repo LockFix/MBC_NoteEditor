@@ -4,20 +4,20 @@ using System.Windows.Forms;
 using System.IO;
 using UnityEngine.UI;
 using TMPro;
-using UnityEditor.Build.Content;
-using System;
 using UnityEngine.Networking;
-
-public enum FileType {MP3 = 0, WAV = 1};
+using Button = UnityEngine.UI.Button;
 
 public class fileSelectScript : MonoBehaviour
 {
     public static int fileType;
-    public static AudioClip audioClip;
+    public AudioClip audioClip;
 
     public AudioSource audioSource;
     public GameObject audioFile;
     public GameObject loadingPanel; //로딩패널
+    public Button forwardButton;
+    public Button backButton;
+    public Button pnpButton;
     public TMP_Text selectedMusicText; //선택한 음악 파일의 이름을 보여줄 텍스트
 
     private Slider progressBar; //진행바
@@ -84,7 +84,7 @@ public class fileSelectScript : MonoBehaviour
         {
             yield return www.SendWebRequest();
 
-            if (www.result != UnityWebRequest.Result.Success) Debug.LogError("audio loading fail : " + www.error);
+            if (www.result != UnityWebRequest.Result.Success) Debug.LogError("Audio loading fail : " + www.error);
             else
             {
                 audioClip = DownloadHandlerAudioClip.GetContent(www);
@@ -93,5 +93,8 @@ public class fileSelectScript : MonoBehaviour
         }
 
         loadingPanel.SetActive(false);
+        pnpButton.interactable = true;
+        backButton.interactable = true;
+        forwardButton.interactable = true;
     }
 }

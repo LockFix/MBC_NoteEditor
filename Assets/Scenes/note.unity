@@ -276,7 +276,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 32117122}
   m_OnClick:
     m_PersistentCalls:
@@ -803,8 +803,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000024736, y: 36}
-  m_SizeDelta: {x: 375.7922, y: 45.0151}
+  m_AnchoredPosition: {x: 0.000024736, y: 40.118824}
+  m_SizeDelta: {x: 375.7922, y: 30.2381}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &172988614
 MonoBehaviour:
@@ -5056,9 +5056,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d33cf02a7d10bd046a6e9269029b4131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioClip: {fileID: 0}
   audioSource: {fileID: 1455239146}
   audioFile: {fileID: 0}
   loadingPanel: {fileID: 2016245512}
+  forwardButton: {fileID: 1318629213}
+  backButton: {fileID: 1673477714}
+  pnpButton: {fileID: 32117121}
   selectedMusicText: {fileID: 1078240038}
 --- !u!1 &982009214
 GameObject:
@@ -5230,8 +5234,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.00007677078}
+  m_SizeDelta: {x: 0, y: 15.119}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &987721794
 MonoBehaviour:
@@ -5305,8 +5309,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1.6000061, y: -0.0000019073}
+  m_SizeDelta: {x: 50.039, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1002106817
 MonoBehaviour:
@@ -6016,11 +6020,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1318629214}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1455239145}
+        m_TargetAssemblyTypeName: playScript, Assembly-CSharp
+        m_MethodName: onForwardButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1318629214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7367,11 +7383,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1673477715}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1455239145}
+        m_TargetAssemblyTypeName: playScript, Assembly-CSharp
+        m_MethodName: onBackwardButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1673477715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8304,8 +8332,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -0.000045776367, y: 0}
-  m_SizeDelta: {x: 0.000061035, y: 0}
+  m_AnchoredPosition: {x: -0.000045776367, y: 0.00007343292}
+  m_SizeDelta: {x: 0.0001, y: 15.119}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1951851760
 GameObject:
