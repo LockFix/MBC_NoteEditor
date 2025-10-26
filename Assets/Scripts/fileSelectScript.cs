@@ -4,21 +4,24 @@ using System.Windows.Forms;
 using System.IO;
 using UnityEngine.UI;
 using TMPro;
-using UnityEditor.Build.Content;
-using System;
 using UnityEngine.Networking;
-
-public enum FileType {MP3 = 0, WAV = 1};
+using Button = UnityEngine.UI.Button;
 
 public class fileSelectScript : MonoBehaviour
 {
     public static int fileType;
-    public static AudioClip audioClip;
+    public AudioClip audioClip;
 
     public AudioSource audioSource;
     public GameObject audioFile;
     public GameObject loadingPanel; //로딩패널
+    public Button forwardButton;
+    public Button backButton;
+    public Button pnpButton;
+    public Button stopButton;
     public TMP_Text selectedMusicText; //선택한 음악 파일의 이름을 보여줄 텍스트
+    public TMP_Text finalTimeText;
+    public Slider playBar;
 
     private Slider progressBar; //진행바
     private TMP_Text value; //진행 텍스트
@@ -84,14 +87,41 @@ public class fileSelectScript : MonoBehaviour
         {
             yield return www.SendWebRequest();
 
-            if (www.result != UnityWebRequest.Result.Success) Debug.LogError("audio loading fail : " + www.error);
+            if (www.result != UnityWebRequest.Result.Success) Debug.LogError("Audio loading fail : " + www.error);
             else
             {
                 audioClip = DownloadHandlerAudioClip.GetContent(www);
                 audioSource.clip = audioClip;
             }
         }
+        pnpButton.interactable = true;
+        backButton.interactable = true;
+        forwardButton.interactable = true;
+        stopButton.interactable = true;
+
+        playBar.maxValue = audioClip.length;
+
+        int hour = 0;
+        int min = 0;
+        int second = 0;
+
+        if (audioClip.length < 3600)
+        {
+            min = (int)audioClip.length / 60;
+            second = (int)audioClip.length % 60;
+
+            finalTimeText.text = min + ":" + second;
+        }
+        else
+        {
+            hour = (int)audioClip.length / 3600;
+            min = (int)audioClip.length % 3600 / 60;
+            second = (int)audioClip.length % 3600 % 60;
+
+            finalTimeText.text = hour + ":" + min + ":" + second;
+        }
 
         loadingPanel.SetActive(false);
+        
     }
 }
