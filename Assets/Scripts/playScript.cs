@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -61,10 +62,13 @@ public class playScript : MonoBehaviour
 
         if (pnpState == 0)
         {
-            pnpState = 1;
-            audioSource.Play();
-            StartCoroutine(progressing());
-            pnpButton.GetComponent<Image>().sprite = pauseImage;
+            if(settingButtonScript.MODE == 0)
+            {
+                if (fileSelectScript.isSelectedFolderPath)
+                {
+                    playMusic();
+                }
+            }
         }
         else
         {
@@ -98,6 +102,14 @@ public class playScript : MonoBehaviour
 
         if (backTime < 0) backTime = 0;
         audioSource.time = backTime;
+    }
+
+    private void playMusic()
+    {
+        pnpState = 1;
+        audioSource.Play();
+        StartCoroutine(progressing());
+        pnpButton.GetComponent<Image>().sprite = pauseImage;
     }
     
     IEnumerator progressing()

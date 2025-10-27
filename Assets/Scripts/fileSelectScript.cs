@@ -10,6 +10,8 @@ using Button = UnityEngine.UI.Button;
 public class fileSelectScript : MonoBehaviour
 {
     public static int fileType;
+    public static string outputFolderPath;
+    public static bool isSelectedFolderPath;
     public AudioClip audioClip;
 
     public AudioSource audioSource;
@@ -20,6 +22,7 @@ public class fileSelectScript : MonoBehaviour
     public Button pnpButton;
     public Button stopButton;
     public TMP_Text selectedMusicText; //선택한 음악 파일의 이름을 보여줄 텍스트
+    public TMP_Text selectedFolderPathText; //선택한 출력 폴더 경로를 보여줄 텍스트
     public TMP_Text finalTimeText;
     public Slider playBar;
 
@@ -123,5 +126,20 @@ public class fileSelectScript : MonoBehaviour
 
         loadingPanel.SetActive(false);
         
+    }
+
+    public void onFolderSelectingButton()
+    {
+        FolderBrowserDialog fbd = new FolderBrowserDialog();
+        fbd.Description = "노트맵을 저장할 폴더 경로 선택";
+        fbd.ShowNewFolderButton = true;
+
+        if(fbd.ShowDialog() == DialogResult.OK)
+        {
+            Debug.Log("선택한 폴더 경로 : " + fbd.SelectedPath);
+            outputFolderPath = fbd.SelectedPath;
+            selectedFolderPathText.text = fbd.SelectedPath;
+            isSelectedFolderPath = true;
+        }
     }
 }
