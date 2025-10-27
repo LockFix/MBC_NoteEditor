@@ -11,6 +11,7 @@ public class fileSelectScript : MonoBehaviour
 {
     public static int fileType;
     public static string outputFolderPath;
+    public static string outputFileName;
     public static bool isSelectedFolderPath;
     public AudioClip audioClip;
 
@@ -134,7 +135,7 @@ public class fileSelectScript : MonoBehaviour
         fbd.Description = "노트맵을 저장할 폴더 경로 선택";
         fbd.ShowNewFolderButton = true;
 
-        if(fbd.ShowDialog() == DialogResult.OK)
+        if (fbd.ShowDialog() == DialogResult.OK)
         {
             Debug.Log("선택한 폴더 경로 : " + fbd.SelectedPath);
             outputFolderPath = fbd.SelectedPath;
@@ -142,4 +143,10 @@ public class fileSelectScript : MonoBehaviour
             isSelectedFolderPath = true;
         }
     }
+    
+    public void onOutputFileField(string name)
+    {
+        outputFileName = name;
+        Debug.Log("출력 파일 이름 : " + name);
+    } 
 }
