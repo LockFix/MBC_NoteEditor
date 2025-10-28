@@ -7205,6 +7205,8 @@ MonoBehaviour:
   forwardButton: {fileID: 1318629211}
   backwardButton: {fileID: 1673477712}
   presentTimeText: {fileID: 2004139891}
+  fileNameInputField: {fileID: 1938885140}
+  noteDatas: []
 --- !u!82 &1455239146
 AudioSource:
   m_ObjectHideFlags: 0

@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -14,6 +16,7 @@ public class playScript : MonoBehaviour
     public GameObject forwardButton;
     public GameObject backwardButton;
     public TMP_Text presentTimeText;
+    public TMP_InputField fileNameInputField;
 
     private InputActionAsset inputActions;
     private InputAction key1;
@@ -23,6 +26,21 @@ public class playScript : MonoBehaviour
     private AudioSource audioSource;
 
     private int pnpState;
+
+    [Serializable]
+    public class NoteData //json 출력 파일에 담길 각 노트의 데이터 클래스
+    {
+        public int direction; //노트 방향
+        public float timing; //노트 타이밍
+        public NoteData(int direction, float timing)
+        {
+            this.direction = direction;
+            this.timing = timing;
+        }
+    }
+
+    public List<NoteData> noteDatas;
+
     void Awake()
     {
         inputActions = GetComponent<PlayerInput>().actions;
@@ -47,6 +65,7 @@ public class playScript : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        noteDatas = new List<NoteData>();
     }
 
     // Update is called once per frame
@@ -61,17 +80,46 @@ public class playScript : MonoBehaviour
 
         if (pnpState == 0)
         {
-            if(settingButtonScript.MODE == 0)
+            if (settingButtonScript.MODE == 0)
             {
-                if (fileSelectScript.isSelectedFolderPath)
+                if (fileSelectScript.isSelectedFolderPath && fileSelectScript.outputFileName != "")
                 {
+                    fileNameInputField.interactable = false;
                     playMusic();
+
+                    key1.Enable();
+                    key2.Enable();
+                    key3.Enable();
+                    key4.Enable();
+                }
+            }
+        }
+        else if (pnpState == 2)
+        {
+            if (settingButtonScript.MODE == 0)
+            {
+                if (fileSelectScript.isSelectedFolderPath && fileSelectScript.outputFileName != "")
+                {
+                    fileNameInputField.interactable = false;
+                    noteDatas = new List<NoteData>();
+                    playMusic();
+
+                    key1.Enable();
+                    key2.Enable();
+                    key3.Enable();
+                    key4.Enable();
                 }
             }
         }
         else
         {
-            pnpState = 0;
+            pnpState = 2;
+
+            key1.Disable();
+            key2.Disable();
+            key3.Disable();
+            key4.Disable();
+
             audioSource.Pause();
             pnpButton.GetComponent<Image>().sprite = playImage;
         }
@@ -79,12 +127,18 @@ public class playScript : MonoBehaviour
 
     public void onStopButton()
     {
+        key1.Disable();
+        key2.Disable();
+        key3.Disable();
+        key4.Disable();
+
         Debug.Log("Audio stopped");
 
         audioSource.Stop();
         pnpState = 0;
         playBar.value = 0;
         pnpButton.GetComponent<Image>().sprite = playImage;
+        fileNameInputField.interactable = true;
     }
 
     public void onForwardButton()
@@ -110,7 +164,7 @@ public class playScript : MonoBehaviour
         StartCoroutine(progressing());
         pnpButton.GetComponent<Image>().sprite = pauseImage;
     }
-    
+
     IEnumerator progressing()
     {
         while (audioSource.isPlaying)
@@ -128,6 +182,43 @@ public class playScript : MonoBehaviour
 
             yield return null;
         }
-        if (audioSource.time == audioSource.clip.length) playBar.value = 0; 
+        if (audioSource.time == audioSource.clip.length) playBar.value = 0;
+    }
+
+    public void addNote(int direction)
+    {
+        float timing = audioSource.time;
+        NoteData noteData = new NoteData(direction, timing);
+        noteDatas.Add(noteData);
+
+        Debug.Log(jsoner.ToJson(noteDatas));
+    }
+
+    public void OnFirstKey()
+    {
+        addNote(1);
+
+        Debug.Log("1키 눌림.");
+    }
+
+    public void OnSecondKey()
+    {
+        addNote(2);
+        
+        Debug.Log("2키 눌림.");
+    }
+
+    public void OnThirdKey()
+    {
+        addNote(3);
+
+        Debug.Log("3키 눌림.");
+    }
+    
+    public void OnFourthKey()
+    {
+        addNote(4);
+
+        Debug.Log("4키 눌림.");
     }
 }
