@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Networking;
 using Button = UnityEngine.UI.Button;
+using System.Security.Policy;
 
 public class fileSelectScript : MonoBehaviour
 {
@@ -16,12 +17,13 @@ public class fileSelectScript : MonoBehaviour
     public AudioClip audioClip;
 
     public AudioSource audioSource;
-    public GameObject audioFile;
-    public GameObject loadingPanel; //로딩패널
+    public GameObject loadingPanel; //로딩 패널
+    public GameObject errorPanel; //에러 패널
     public Button forwardButton;
     public Button backButton;
     public Button pnpButton;
     public Button stopButton;
+    public TMP_InputField fileInputField;
     public TMP_Text selectedMusicText; //선택한 음악 파일의 이름을 보여줄 텍스트
     public TMP_Text selectedFolderPathText; //선택한 출력 폴더 경로를 보여줄 텍스트
     public TMP_Text finalTimeText;
@@ -143,10 +145,23 @@ public class fileSelectScript : MonoBehaviour
             isSelectedFolderPath = true;
         }
     }
-    
+
     public void onOutputFileField(string name)
     {
         outputFileName = name;
+
+        if(File.Exists(outputFolderPath + '\\' + outputFileName + ".json"))
+        {
+            outputFileName = "";
+            fileInputField.text = "ERROR";
+            errorPanel.SetActive(true);
+        }
+
         Debug.Log("출력 파일 이름 : " + name);
-    } 
+    }
+    
+    public void onOkButton()
+    {
+        errorPanel.SetActive(false);
+    }
 }
