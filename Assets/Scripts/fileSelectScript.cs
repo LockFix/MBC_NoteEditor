@@ -6,7 +6,6 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Networking;
 using Button = UnityEngine.UI.Button;
-using System.Security.Policy;
 
 public class fileSelectScript : MonoBehaviour
 {

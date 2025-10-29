@@ -1,8 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -15,6 +15,8 @@ public class playScript : MonoBehaviour
     public Slider playBar;
     public GameObject forwardButton;
     public GameObject backwardButton;
+    public GameObject logPrefab; //로그 프리팹s
+    public Transform content; //로그를 띄울 스크롤뷰의 콘텐츠뷰
     public TMP_Text presentTimeText;
     public TMP_InputField fileNameInputField;
 
@@ -24,6 +26,8 @@ public class playScript : MonoBehaviour
     private InputAction key3;
     private InputAction key4;
     private AudioSource audioSource;
+    private FileStream fileWriter;
+    private string filePath;
 
     private int pnpState;
 
@@ -80,28 +84,14 @@ public class playScript : MonoBehaviour
 
         if (pnpState == 0)
         {
-            if (settingButtonScript.MODE == 0)
+            if (settingButtonScript.MODE == 0) //플레이
             {
                 if (fileSelectScript.isSelectedFolderPath && fileSelectScript.outputFileName != "")
                 {
-                    fileNameInputField.interactable = false;
-                    playMusic();
-
-                    key1.Enable();
-                    key2.Enable();
-                    key3.Enable();
-                    key4.Enable();
-                }
-            }
-        }
-        else if (pnpState == 2)
-        {
-            if (settingButtonScript.MODE == 0)
-            {
-                if (fileSelectScript.isSelectedFolderPath && fileSelectScript.outputFileName != "")
-                {
-                    fileNameInputField.interactable = false;
+                    pnpState = 2;
                     noteDatas = new List<NoteData>();
+                    fileNameInputField.interactable = false;
+
                     playMusic();
 
                     key1.Enable();
@@ -111,9 +101,26 @@ public class playScript : MonoBehaviour
                 }
             }
         }
-        else
+        else if (pnpState == 1) //이어 플레이
         {
-            pnpState = 2;
+            if (settingButtonScript.MODE == 0)
+            {
+                if (fileSelectScript.isSelectedFolderPath && fileSelectScript.outputFileName != "")
+                {
+                    fileNameInputField.interactable = false;
+                    pnpState = 2;
+                    playMusic();
+
+                    key1.Enable();
+                    key2.Enable();
+                    key3.Enable();
+                    key4.Enable();
+                }
+            }
+        }
+        else //일시정지
+        {
+            pnpState = 1;
 
             key1.Disable();
             key2.Disable();
@@ -125,7 +132,7 @@ public class playScript : MonoBehaviour
         }
     }
 
-    public void onStopButton()
+    public void onStopButton() //완전 stop
     {
         key1.Disable();
         key2.Disable();
@@ -185,15 +192,17 @@ public class playScript : MonoBehaviour
         if (audioSource.time == audioSource.clip.length) playBar.value = 0;
     }
 
-    public void addNote(int direction)
+    public void addNote(int direction) //노트 데이터 추가 메서드
     {
         float timing = audioSource.time;
         NoteData noteData = new NoteData(direction, timing);
         noteDatas.Add(noteData);
 
-        Debug.Log(jsoner.ToJson(noteDatas));
+        GameObject log = Instantiate(Resources.Load("Prefabs/log", typeof(GameObject)), content) as GameObject;
+        log.GetComponentInChildren<Image>().GetComponentInChildren<TMP_Text>().text = JsonUtility.ToJson(noteData);
     }
 
+    //노트 입력 메서드 구현
     public void OnFirstKey()
     {
         addNote(1);
