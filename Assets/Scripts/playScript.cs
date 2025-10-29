@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -15,9 +16,14 @@ public class playScript : MonoBehaviour
     public Slider playBar;
     public GameObject forwardButton;
     public GameObject backwardButton;
+    public GameObject savedPanel;
     public GameObject logPrefab; //로그 프리팹s
     public Transform content; //로그를 띄울 스크롤뷰의 콘텐츠뷰
     public TMP_Text presentTimeText;
+    public Image keyGuide1;
+    public Image keyGuide2;
+    public Image keyGuide3;
+    public Image keyGuide4;
     public TMP_InputField fileNameInputField;
 
     private InputActionAsset inputActions;
@@ -61,6 +67,11 @@ public class playScript : MonoBehaviour
         if (!PlayerPrefs.HasKey("key-bind")) PlayerPrefs.SetString("key-bind", inputActions.SaveBindingOverridesAsJson());
         inputActions.LoadBindingOverridesFromJson(PlayerPrefs.GetString("key-bind"));
 
+        keyGuide1.GetComponentInChildren<TMP_Text>().text = getStringFromAction("firstKey");
+        keyGuide2.GetComponentInChildren<TMP_Text>().text = getStringFromAction("secondKey");
+        keyGuide3.GetComponentInChildren<TMP_Text>().text = getStringFromAction("thirdKey");
+        keyGuide4.GetComponentInChildren<TMP_Text>().text = getStringFromAction("fourthKey");
+
         Debug.Log("playerScript.cs의 Awake 실행됨");
         pnpState = 0;
     }
@@ -88,9 +99,16 @@ public class playScript : MonoBehaviour
             {
                 if (fileSelectScript.isSelectedFolderPath && fileSelectScript.outputFileName != "")
                 {
-                    pnpState = 2;
                     noteDatas = new List<NoteData>();
                     fileNameInputField.interactable = false;
+
+                    foreach(Transform child in content) //로그 기록 비우기
+                    {
+                        Destroy(child.gameObject);
+                    }
+
+                    filePath = Path.Combine(fileSelectScript.outputFolderPath, fileSelectScript.outputFileName + ".json"); //출력 파일 json 형식으로 저장
+                    fileWriter = new FileStream(filePath, FileMode.Create, FileAccess.Write);
 
                     playMusic();
 
@@ -108,7 +126,6 @@ public class playScript : MonoBehaviour
                 if (fileSelectScript.isSelectedFolderPath && fileSelectScript.outputFileName != "")
                 {
                     fileNameInputField.interactable = false;
-                    pnpState = 2;
                     playMusic();
 
                     key1.Enable();
@@ -134,6 +151,12 @@ public class playScript : MonoBehaviour
 
     public void onStopButton() //완전 stop
     {
+        fileWriter.Write(Encoding.UTF8.GetBytes(jsoner.ToJson(noteDatas))); //출력 파일 저장
+        fileWriter.Close(); //메모리 누수 방지
+        savedPanel.SetActive(true);
+        fileSelectScript.outputFileName = "";
+        fileNameInputField.text = "";
+
         key1.Disable();
         key2.Disable();
         key3.Disable();
@@ -144,6 +167,7 @@ public class playScript : MonoBehaviour
         audioSource.Stop();
         pnpState = 0;
         playBar.value = 0;
+        presentTimeText.text = "00:00:00";
         pnpButton.GetComponent<Image>().sprite = playImage;
         fileNameInputField.interactable = true;
     }
@@ -154,6 +178,14 @@ public class playScript : MonoBehaviour
 
         if (foTime > audioSource.clip.length) foTime = audioSource.clip.length;
         audioSource.time = foTime;
+        if (foTime < 3600)
+        {
+            presentTimeText.text = ((int)foTime / 60).ToString() + ":" + ((int)foTime % 60).ToString();
+        }
+        else
+        {
+            presentTimeText.text = ((int)foTime / 3600).ToString() + ":" + ((int)foTime % 3600 / 60).ToString() + ":" + ((int)foTime % 3600 % 60).ToString();
+        }
     }
 
     public void onBackwardButton()
@@ -162,11 +194,19 @@ public class playScript : MonoBehaviour
 
         if (backTime < 0) backTime = 0;
         audioSource.time = backTime;
+        if (backTime < 3600)
+        {
+            presentTimeText.text = ((int)backTime / 60).ToString() + ":" + ((int)backTime % 60).ToString();
+        }
+        else
+        {
+            presentTimeText.text = ((int)backTime / 3600).ToString() + ":" + ((int)backTime % 3600 / 60).ToString() + ":" + ((int)backTime % 3600 % 60).ToString();
+        }
     }
 
     private void playMusic()
     {
-        pnpState = 1;
+        pnpState = 2;
         audioSource.Play();
         StartCoroutine(progressing());
         pnpButton.GetComponent<Image>().sprite = pauseImage;
@@ -189,7 +229,11 @@ public class playScript : MonoBehaviour
 
             yield return null;
         }
-        if (audioSource.time == audioSource.clip.length) playBar.value = 0;
+        if (audioSource.time == audioSource.clip.length)
+        {
+            playBar.value = 0;
+            presentTimeText.text = "00:00:00";
+        }
     }
 
     public void addNote(int direction) //노트 데이터 추가 메서드
@@ -206,6 +250,7 @@ public class playScript : MonoBehaviour
     public void OnFirstKey()
     {
         addNote(1);
+        StartCoroutine(highlightedEffect(keyGuide1));
 
         Debug.Log("1키 눌림.");
     }
@@ -213,21 +258,42 @@ public class playScript : MonoBehaviour
     public void OnSecondKey()
     {
         addNote(2);
-        
+        StartCoroutine(highlightedEffect(keyGuide2));
+
         Debug.Log("2키 눌림.");
     }
 
     public void OnThirdKey()
     {
         addNote(3);
+        StartCoroutine(highlightedEffect(keyGuide3));
 
         Debug.Log("3키 눌림.");
     }
-    
+
     public void OnFourthKey()
     {
         addNote(4);
+        StartCoroutine(highlightedEffect(keyGuide4));
 
         Debug.Log("4키 눌림.");
+    }
+
+    public void onCheckedSaveingButton()
+    {
+        savedPanel.SetActive(false);
+    }
+
+    public string getStringFromAction(string actionName)
+    {
+        InputAction action = inputActions.FindAction(actionName);
+        return action.GetBindingDisplayString(action.GetBindingIndexForControl(action.controls[0]));
+    }
+    
+    IEnumerator highlightedEffect(Image image)
+    {
+        image.color = new Color(0.78f, 0.78f, 0.78f, 1);
+        yield return new WaitForSeconds(0.1f);
+        image.color = new Color(1, 1, 1, 1);
     }
 }

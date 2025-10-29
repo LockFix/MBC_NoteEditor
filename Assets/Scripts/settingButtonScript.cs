@@ -1,13 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 using TMPro;
 using UnityEngine.InputSystem;
-using UnityEngine.EventSystems;
-using UnityEditor.SceneManagement;
-using NUnit.Framework.Internal;
-using System.Windows.Forms;
-using UnityEditor;
 
 /*
     ***세팅에 관한 모든 것을 처리하는 스크립트***
@@ -24,6 +18,10 @@ public class settingButtonScript : MonoBehaviour
     public TMP_Text secondKey;
     public TMP_Text thirdKey;
     public TMP_Text fourthKey;
+    public TMP_Text keyGuide1;
+    public TMP_Text keyGuide2;
+    public TMP_Text keyGuide3;
+    public TMP_Text keyGuide4;
 
     public TMP_Text volumeText;
 
@@ -49,7 +47,7 @@ public class settingButtonScript : MonoBehaviour
     public void onSettingButtonClick()
     { //설정 버튼을 누르면
         Debug.Log("onSettingButtonClick 메서드 호출");
-        string key1 = getStringFromAction("firstkey");
+        string key1 = getStringFromAction("firstKey");
         string key2 = getStringFromAction("secondKey");
         string key3 = getStringFromAction("thirdKey");
         string key4 = getStringFromAction("fourthKey");
@@ -92,6 +90,7 @@ public class settingButtonScript : MonoBehaviour
                 PlayerPrefs.SetString("key-bind", inputActions.SaveBindingOverridesAsJson());
                 PlayerPrefs.Save();
                 firstKey.text = temp;
+                keyGuide1.text = temp;
 
                 Debug.Log("키 바인딩 : fisrtKey + " + temp);
             }
@@ -113,6 +112,7 @@ public class settingButtonScript : MonoBehaviour
                 PlayerPrefs.SetString("key-bind", inputActions.SaveBindingOverridesAsJson());
                 PlayerPrefs.Save();
                 secondKey.text = temp;
+                keyGuide2.text = temp;
 
                 Debug.Log("키 바인딩 : secondKey + " + temp);
             }
@@ -134,6 +134,7 @@ public class settingButtonScript : MonoBehaviour
                 PlayerPrefs.SetString("key-bind", inputActions.SaveBindingOverridesAsJson());
                 PlayerPrefs.Save();
                 thirdKey.text = temp;
+                keyGuide3.text = temp;
 
                 Debug.Log("키 바인딩 : thirdKey + " + temp);
             }
@@ -155,6 +156,7 @@ public class settingButtonScript : MonoBehaviour
                 PlayerPrefs.SetString("key-bind", inputActions.SaveBindingOverridesAsJson());
                 PlayerPrefs.Save();
                 fourthKey.text = temp;
+                keyGuide4.text = temp;
 
                 Debug.Log("키 바인딩 : fourthKey + " + temp);
             }
@@ -163,7 +165,7 @@ public class settingButtonScript : MonoBehaviour
         }).Start();
     }
 
-    private string getStringFromAction(string actionName)
+    public string getStringFromAction(string actionName)
     {
         InputAction action = inputActions.FindAction(actionName);
         return action.GetBindingDisplayString(action.GetBindingIndexForControl(action.controls[0]));

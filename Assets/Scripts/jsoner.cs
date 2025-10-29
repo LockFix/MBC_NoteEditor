@@ -13,6 +13,6 @@ public class jsoner
     {
         Wrapper<T> wrapper = new Wrapper<T>();
         wrapper.notes = list;
-        return JsonUtility.ToJson(wrapper);
+        return JsonUtility.ToJson(wrapper, true);
     }
 }
