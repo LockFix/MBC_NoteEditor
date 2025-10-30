@@ -132,16 +132,23 @@ public class fileSelectScript : MonoBehaviour
 
     public void onFolderSelectingButton()
     {
-        FolderBrowserDialog fbd = new FolderBrowserDialog();
-        fbd.Description = "노트맵을 저장할 폴더 경로 선택";
-        fbd.ShowNewFolderButton = true;
-
-        if (fbd.ShowDialog() == DialogResult.OK)
+        if (settingButtonScript.MODE == 0) //노트 생성 모드
         {
-            Debug.Log("선택한 폴더 경로 : " + fbd.SelectedPath);
-            outputFolderPath = fbd.SelectedPath;
-            selectedFolderPathText.text = fbd.SelectedPath;
-            isSelectedFolderPath = true;
+            FolderBrowserDialog fbd = new FolderBrowserDialog();
+            fbd.Description = "노트맵을 저장할 폴더 경로 선택";
+            fbd.ShowNewFolderButton = true;
+
+            if (fbd.ShowDialog() == DialogResult.OK)
+            {
+                Debug.Log("선택한 폴더 경로 : " + fbd.SelectedPath);
+                outputFolderPath = fbd.SelectedPath;
+                selectedFolderPathText.text = fbd.SelectedPath;
+                isSelectedFolderPath = true;
+            }
+        }
+        else //노트 편집 모드
+        {
+            
         }
     }
 
