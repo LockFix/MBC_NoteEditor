@@ -7810,6 +7810,7 @@ MonoBehaviour:
   pauseImage: {fileID: 2378952838156204933, guid: ca4e794abc68d984aa7a51206d7d3829, type: 3}
   playImage: {fileID: -3868690619771546599, guid: 65bb14f60e690cd4a835c7135cc218d7, type: 3}
   pnpButton: {fileID: 32117121}
+  outputButton: {fileID: 1630630150}
   playBar: {fileID: 172988614}
   forwardButton: {fileID: 1318629211}
   backwardButton: {fileID: 1673477712}
@@ -7822,6 +7823,7 @@ MonoBehaviour:
   keyGuide3: {fileID: 2028908811}
   keyGuide4: {fileID: 1008977676}
   fileNameInputField: {fileID: 1938885140}
+  modeDropdown: {fileID: 878115910}
   noteDatas: []
 --- !u!82 &1455239146
 AudioSource:
@@ -11018,6 +11020,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::settingButtonScript
   settingPanel: {fileID: 317694850}
   bindingOverlay: {fileID: 932063754}
+  fileInputField: {fileID: 1938885138}
   audioSource: {fileID: 1455239146}
   firstKey: {fileID: 656300212}
   secondKey: {fileID: 1904147911}
@@ -11031,6 +11034,9 @@ MonoBehaviour:
   volumeBar: {fileID: 198196079}
   inputActions: {fileID: -944628639613478452, guid: 81daf71be9a6bc04ea1971025b221a63, type: 3}
   modeDropDown: {fileID: 878115910}
+  outputButton: {fileID: 1630630150}
+  selectedDetails: {fileID: 990372136}
+  guideText: {fileID: 597975988}
 --- !u!1 &2004139889
 GameObject:
   m_ObjectHideFlags: 0

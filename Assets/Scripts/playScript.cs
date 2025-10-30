@@ -13,6 +13,7 @@ public class playScript : MonoBehaviour
     public Sprite pauseImage;
     public Sprite playImage;
     public Button pnpButton;
+    public Button outputButton;
     public Slider playBar;
     public GameObject forwardButton;
     public GameObject backwardButton;
@@ -25,6 +26,7 @@ public class playScript : MonoBehaviour
     public Image keyGuide3;
     public Image keyGuide4;
     public TMP_InputField fileNameInputField;
+    public TMP_Dropdown modeDropdown;
 
     private InputActionAsset inputActions;
     private InputAction key1;
@@ -92,17 +94,19 @@ public class playScript : MonoBehaviour
     public void onPlayButton()
     {
         Debug.Log(settingButtonScript.MODE);
-
-        if (pnpState == 0)
+        if (settingButtonScript.MODE == 0) //노트 생성 모드일 때(MakeNote)
         {
-            if (settingButtonScript.MODE == 0) //플레이
+            if (pnpState == 0) //플레이
             {
                 if (fileSelectScript.isSelectedFolderPath && fileSelectScript.outputFileName != "")
                 {
                     noteDatas = new List<NoteData>();
                     fileNameInputField.interactable = false;
 
-                    foreach(Transform child in content) //로그 기록 비우기
+                    outputButton.interactable = false;
+                    modeDropdown.interactable = false;
+
+                    foreach (Transform child in content) //로그 기록 비우기
                     {
                         Destroy(child.gameObject);
                     }
@@ -118,14 +122,10 @@ public class playScript : MonoBehaviour
                     key4.Enable();
                 }
             }
-        }
-        else if (pnpState == 1) //이어 플레이
-        {
-            if (settingButtonScript.MODE == 0)
+            else if (pnpState == 1) //이어 플레이
             {
                 if (fileSelectScript.isSelectedFolderPath && fileSelectScript.outputFileName != "")
                 {
-                    fileNameInputField.interactable = false;
                     playMusic();
 
                     key1.Enable();
@@ -134,18 +134,33 @@ public class playScript : MonoBehaviour
                     key4.Enable();
                 }
             }
+            else //일시정지
+            {
+                pnpState = 1;
+
+                key1.Disable();
+                key2.Disable();
+                key3.Disable();
+                key4.Disable();
+
+                audioSource.Pause();
+                pnpButton.GetComponent<Image>().sprite = playImage;
+            }
         }
-        else //일시정지
+        else //노트 에딧 모드일 때(EditNote)
         {
-            pnpState = 1;
+            if (pnpState == 0) //노트 플레이
+            {
 
-            key1.Disable();
-            key2.Disable();
-            key3.Disable();
-            key4.Disable();
+            }
+            else if (pnpState == 1) //노트 이어 플레이
+            {
 
-            audioSource.Pause();
-            pnpButton.GetComponent<Image>().sprite = playImage;
+            }
+            else //노트 플레이 일시정지 : 노트 에딧
+            {
+                
+            }
         }
     }
 
@@ -170,6 +185,8 @@ public class playScript : MonoBehaviour
         presentTimeText.text = "00:00:00";
         pnpButton.GetComponent<Image>().sprite = playImage;
         fileNameInputField.interactable = true;
+        modeDropdown.interactable = true;
+        outputButton.interactable = true;
     }
 
     public void onForwardButton()

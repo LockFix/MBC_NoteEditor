@@ -11,6 +11,7 @@ public class settingButtonScript : MonoBehaviour
 {
     public GameObject settingPanel;
     public GameObject bindingOverlay;
+    public GameObject fileInputField;
 
     public AudioSource audioSource;
 
@@ -30,6 +31,9 @@ public class settingButtonScript : MonoBehaviour
     public InputActionAsset inputActions;
 
     public TMP_Dropdown modeDropDown;
+    public Button outputButton;
+    public TMP_Text selectedDetails;
+    public TMP_Text guideText;
 
     public static short MODE; //0 : make_note, 1 : edit_note
 
@@ -174,5 +178,19 @@ public class settingButtonScript : MonoBehaviour
     public void onModeChanged()
     {
         MODE = (short)modeDropDown.GetComponent<TMP_Dropdown>().value;
+        if (MODE == 0) //노트 생성 모드
+        {
+            outputButton.GetComponentInChildren<TMP_Text>().text = "출력 폴더 경로 선택";
+            guideText.text = "선택한 폴더 경로";
+            selectedDetails.text = "선택한 폴더 없음";
+            fileInputField.SetActive(true);
+        }
+        else //노트 편집 모드
+        {
+            outputButton.GetComponentInChildren<TMP_Text>().text = "노트맵 파일 선택";
+            guideText.text = "선택한 노트맵";
+            selectedDetails.text = "선택한 파일 없음";
+            fileInputField.SetActive(false);
+        }
     }
 }
