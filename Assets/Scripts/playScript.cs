@@ -18,7 +18,7 @@ public class playScript : MonoBehaviour
     public GameObject forwardButton;
     public GameObject backwardButton;
     public GameObject savedPanel;
-    public GameObject logPrefab; //로그 프리팹s
+    public GameObject logPrefab; //로그 프리팹
     public Transform content; //로그를 띄울 스크롤뷰의 콘텐츠뷰
     public TMP_Text presentTimeText;
     public Image keyGuide1;

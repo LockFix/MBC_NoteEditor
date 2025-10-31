@@ -11035,8 +11035,8 @@ MonoBehaviour:
   inputActions: {fileID: -944628639613478452, guid: 81daf71be9a6bc04ea1971025b221a63, type: 3}
   modeDropDown: {fileID: 878115910}
   outputButton: {fileID: 1630630150}
-  selectedDetails: {fileID: 990372136}
-  guideText: {fileID: 597975988}
+  selectedDetails: {fileID: 597975988}
+  guideText: {fileID: 990372136}
 --- !u!1 &2004139889
 GameObject:
   m_ObjectHideFlags: 0
