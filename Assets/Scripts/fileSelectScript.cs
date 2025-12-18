@@ -43,7 +43,7 @@ public class fileSelectScript : MonoBehaviour
         string filePath; //원본 파일 경로
         string savePath; //저장 경로
         OpenFileDialog ofd = new OpenFileDialog();
-        ofd.Filter = "음악 파일|*.mp3;*.wav;*.ogg"; //음악 파일 필터링
+        ofd.Filter = "음악 파일|*.mp3;*.wav;*.ogg;*.opus"; //음악 파일 필터링
         ofd.Title = "음악 파일 선택하기"; //파일 선택창 제목 설정
         if (ofd.ShowDialog() == DialogResult.OK)
         { //파일 선택창 띄우고 파일을 선택했다면

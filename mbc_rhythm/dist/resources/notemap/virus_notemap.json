@@ -1,0 +1,2440 @@
+{
+    "notes": [
+        {
+            "direction": 1,
+            "timing": 12.437333106994629
+        },
+        {
+            "direction": 3,
+            "timing": 12.62933349609375
+        },
+        {
+            "direction": 2,
+            "timing": 12.821332931518555
+        },
+        {
+            "direction": 4,
+            "timing": 12.970666885375977
+        },
+        {
+            "direction": 1,
+            "timing": 13.37600040435791
+        },
+        {
+            "direction": 3,
+            "timing": 13.567999839782715
+        },
+        {
+            "direction": 2,
+            "timing": 13.781332969665528
+        },
+        {
+            "direction": 4,
+            "timing": 14.122666358947754
+        },
+        {
+            "direction": 1,
+            "timing": 14.357333183288575
+        },
+        {
+            "direction": 3,
+            "timing": 14.570666313171387
+        },
+        {
+            "direction": 2,
+            "timing": 14.954667091369629
+        },
+        {
+            "direction": 4,
+            "timing": 15.338666915893555
+        },
+        {
+            "direction": 1,
+            "timing": 15.594666481018067
+        },
+        {
+            "direction": 3,
+            "timing": 15.637332916259766
+        },
+        {
+            "direction": 2,
+            "timing": 15.701333045959473
+        },
+        {
+            "direction": 3,
+            "timing": 15.807999610900879
+        },
+        {
+            "direction": 2,
+            "timing": 15.829333305358887
+        },
+        {
+            "direction": 3,
+            "timing": 15.935999870300293
+        },
+        {
+            "direction": 2,
+            "timing": 16.0
+        },
+        {
+            "direction": 3,
+            "timing": 16.0853328704834
+        },
+        {
+            "direction": 1,
+            "timing": 16.447999954223634
+        },
+        {
+            "direction": 4,
+            "timing": 16.832000732421876
+        },
+        {
+            "direction": 1,
+            "timing": 17.237333297729493
+        },
+        {
+            "direction": 4,
+            "timing": 17.64266586303711
+        },
+        {
+            "direction": 1,
+            "timing": 18.04800033569336
+        },
+        {
+            "direction": 4,
+            "timing": 18.43199920654297
+        },
+        {
+            "direction": 2,
+            "timing": 18.858667373657228
+        },
+        {
+            "direction": 3,
+            "timing": 19.029333114624025
+        },
+        {
+            "direction": 1,
+            "timing": 19.200000762939454
+        },
+        {
+            "direction": 4,
+            "timing": 19.54133415222168
+        },
+        {
+            "direction": 1,
+            "timing": 19.968000411987306
+        },
+        {
+            "direction": 4,
+            "timing": 20.351999282836915
+        },
+        {
+            "direction": 2,
+            "timing": 20.565332412719728
+        },
+        {
+            "direction": 3,
+            "timing": 20.757333755493165
+        },
+        {
+            "direction": 1,
+            "timing": 21.09866714477539
+        },
+        {
+            "direction": 4,
+            "timing": 21.503999710083009
+        },
+        {
+            "direction": 2,
+            "timing": 21.88800048828125
+        },
+        {
+            "direction": 3,
+            "timing": 22.079999923706056
+        },
+        {
+            "direction": 1,
+            "timing": 22.250667572021486
+        },
+        {
+            "direction": 4,
+            "timing": 22.634666442871095
+        },
+        {
+            "direction": 1,
+            "timing": 22.847999572753908
+        },
+        {
+            "direction": 4,
+            "timing": 23.040000915527345
+        },
+        {
+            "direction": 2,
+            "timing": 23.423999786376954
+        },
+        {
+            "direction": 3,
+            "timing": 23.615999221801759
+        },
+        {
+            "direction": 1,
+            "timing": 23.829334259033204
+        },
+        {
+            "direction": 4,
+            "timing": 24.170665740966798
+        },
+        {
+            "direction": 1,
+            "timing": 24.576000213623048
+        },
+        {
+            "direction": 3,
+            "timing": 24.78933334350586
+        },
+        {
+            "direction": 2,
+            "timing": 24.959999084472658
+        },
+        {
+            "direction": 4,
+            "timing": 25.130666732788087
+        },
+        {
+            "direction": 1,
+            "timing": 25.365333557128908
+        },
+        {
+            "direction": 3,
+            "timing": 25.685333251953126
+        },
+        {
+            "direction": 2,
+            "timing": 25.920000076293947
+        },
+        {
+            "direction": 4,
+            "timing": 26.11199951171875
+        },
+        {
+            "direction": 3,
+            "timing": 26.474666595458986
+        },
+        {
+            "direction": 1,
+            "timing": 26.687999725341798
+        },
+        {
+            "direction": 4,
+            "timing": 26.90133285522461
+        },
+        {
+            "direction": 3,
+            "timing": 27.242666244506837
+        },
+        {
+            "direction": 3,
+            "timing": 27.626667022705079
+        },
+        {
+            "direction": 2,
+            "timing": 27.84000015258789
+        },
+        {
+            "direction": 4,
+            "timing": 27.946666717529298
+        },
+        {
+            "direction": 1,
+            "timing": 28.031999588012697
+        },
+        {
+            "direction": 3,
+            "timing": 28.117332458496095
+        },
+        {
+            "direction": 2,
+            "timing": 28.202667236328126
+        },
+        {
+            "direction": 3,
+            "timing": 28.266666412353517
+        },
+        {
+            "direction": 2,
+            "timing": 28.30933380126953
+        },
+        {
+            "direction": 3,
+            "timing": 28.416000366210939
+        },
+        {
+            "direction": 1,
+            "timing": 28.778667449951173
+        },
+        {
+            "direction": 4,
+            "timing": 29.16266632080078
+        },
+        {
+            "direction": 1,
+            "timing": 29.56800079345703
+        },
+        {
+            "direction": 4,
+            "timing": 29.994667053222658
+        },
+        {
+            "direction": 1,
+            "timing": 30.35733413696289
+        },
+        {
+            "direction": 4,
+            "timing": 30.7413330078125
+        },
+        {
+            "direction": 2,
+            "timing": 31.125333786010743
+        },
+        {
+            "direction": 3,
+            "timing": 31.338666915893556
+        },
+        {
+            "direction": 1,
+            "timing": 31.53066635131836
+        },
+        {
+            "direction": 4,
+            "timing": 31.850666046142579
+        },
+        {
+            "direction": 1,
+            "timing": 32.2773323059082
+        },
+        {
+            "direction": 3,
+            "timing": 32.66133499145508
+        },
+        {
+            "direction": 2,
+            "timing": 32.85333251953125
+        },
+        {
+            "direction": 4,
+            "timing": 33.00266647338867
+        },
+        {
+            "direction": 1,
+            "timing": 33.38666534423828
+        },
+        {
+            "direction": 4,
+            "timing": 33.813331604003909
+        },
+        {
+            "direction": 2,
+            "timing": 34.218666076660159
+        },
+        {
+            "direction": 3,
+            "timing": 34.43199920654297
+        },
+        {
+            "direction": 1,
+            "timing": 34.602664947509769
+        },
+        {
+            "direction": 4,
+            "timing": 34.96533203125
+        },
+        {
+            "direction": 1,
+            "timing": 35.17866516113281
+        },
+        {
+            "direction": 4,
+            "timing": 35.391998291015628
+        },
+        {
+            "direction": 2,
+            "timing": 35.71200180053711
+        },
+        {
+            "direction": 3,
+            "timing": 35.882667541503909
+        },
+        {
+            "direction": 1,
+            "timing": 36.09600067138672
+        },
+        {
+            "direction": 4,
+            "timing": 36.43733215332031
+        },
+        {
+            "direction": 1,
+            "timing": 36.86399841308594
+        },
+        {
+            "direction": 4,
+            "timing": 37.16266632080078
+        },
+        {
+            "direction": 2,
+            "timing": 37.3120002746582
+        },
+        {
+            "direction": 3,
+            "timing": 37.461334228515628
+        },
+        {
+            "direction": 1,
+            "timing": 37.67466735839844
+        },
+        {
+            "direction": 4,
+            "timing": 37.80266571044922
+        },
+        {
+            "direction": 2,
+            "timing": 38.01599884033203
+        },
+        {
+            "direction": 3,
+            "timing": 38.229331970214847
+        },
+        {
+            "direction": 1,
+            "timing": 38.442665100097659
+        },
+        {
+            "direction": 4,
+            "timing": 38.61333465576172
+        },
+        {
+            "direction": 2,
+            "timing": 38.82666778564453
+        },
+        {
+            "direction": 3,
+            "timing": 39.0186653137207
+        },
+        {
+            "direction": 1,
+            "timing": 39.189334869384769
+        },
+        {
+            "direction": 4,
+            "timing": 39.36000061035156
+        },
+        {
+            "direction": 2,
+            "timing": 39.59466552734375
+        },
+        {
+            "direction": 3,
+            "timing": 39.76533508300781
+        },
+        {
+            "direction": 1,
+            "timing": 39.93600082397461
+        },
+        {
+            "direction": 4,
+            "timing": 40.12799835205078
+        },
+        {
+            "direction": 2,
+            "timing": 40.341331481933597
+        },
+        {
+            "direction": 3,
+            "timing": 40.53333282470703
+        },
+        {
+            "direction": 1,
+            "timing": 40.72533416748047
+        },
+        {
+            "direction": 4,
+            "timing": 40.93866729736328
+        },
+        {
+            "direction": 2,
+            "timing": 41.13066482543945
+        },
+        {
+            "direction": 3,
+            "timing": 41.34400177001953
+        },
+        {
+            "direction": 1,
+            "timing": 41.49333190917969
+        },
+        {
+            "direction": 4,
+            "timing": 41.72800064086914
+        },
+        {
+            "direction": 2,
+            "timing": 41.91999816894531
+        },
+        {
+            "direction": 3,
+            "timing": 42.069332122802737
+        },
+        {
+            "direction": 1,
+            "timing": 42.2400016784668
+        },
+        {
+            "direction": 4,
+            "timing": 42.410667419433597
+        },
+        {
+            "direction": 2,
+            "timing": 42.602664947509769
+        },
+        {
+            "direction": 3,
+            "timing": 42.77333450317383
+        },
+        {
+            "direction": 1,
+            "timing": 42.98666763305664
+        },
+        {
+            "direction": 4,
+            "timing": 43.17866516113281
+        },
+        {
+            "direction": 2,
+            "timing": 43.413333892822269
+        },
+        {
+            "direction": 3,
+            "timing": 43.64799880981445
+        },
+        {
+            "direction": 1,
+            "timing": 43.84000015258789
+        },
+        {
+            "direction": 4,
+            "timing": 43.98933410644531
+        },
+        {
+            "direction": 2,
+            "timing": 44.181331634521487
+        },
+        {
+            "direction": 3,
+            "timing": 44.37333297729492
+        },
+        {
+            "direction": 1,
+            "timing": 44.54399871826172
+        },
+        {
+            "direction": 3,
+            "timing": 44.736000061035159
+        },
+        {
+            "direction": 2,
+            "timing": 44.90666580200195
+        },
+        {
+            "direction": 4,
+            "timing": 45.07733154296875
+        },
+        {
+            "direction": 1,
+            "timing": 45.26933288574219
+        },
+        {
+            "direction": 3,
+            "timing": 45.461334228515628
+        },
+        {
+            "direction": 2,
+            "timing": 45.71733474731445
+        },
+        {
+            "direction": 4,
+            "timing": 45.930667877197269
+        },
+        {
+            "direction": 1,
+            "timing": 46.08000183105469
+        },
+        {
+            "direction": 3,
+            "timing": 46.2933349609375
+        },
+        {
+            "direction": 2,
+            "timing": 46.48533248901367
+        },
+        {
+            "direction": 4,
+            "timing": 46.65599822998047
+        },
+        {
+            "direction": 1,
+            "timing": 46.847999572753909
+        },
+        {
+            "direction": 3,
+            "timing": 47.06133270263672
+        },
+        {
+            "direction": 2,
+            "timing": 47.231998443603519
+        },
+        {
+            "direction": 4,
+            "timing": 47.42399978637695
+        },
+        {
+            "direction": 1,
+            "timing": 47.637332916259769
+        },
+        {
+            "direction": 3,
+            "timing": 47.8293342590332
+        },
+        {
+            "direction": 2,
+            "timing": 48.042667388916019
+        },
+        {
+            "direction": 4,
+            "timing": 48.23466491699219
+        },
+        {
+            "direction": 1,
+            "timing": 48.426666259765628
+        },
+        {
+            "direction": 3,
+            "timing": 48.59733200073242
+        },
+        {
+            "direction": 2,
+            "timing": 48.78933334350586
+        },
+        {
+            "direction": 4,
+            "timing": 49.00266647338867
+        },
+        {
+            "direction": 1,
+            "timing": 49.17333221435547
+        },
+        {
+            "direction": 3,
+            "timing": 49.38666534423828
+        },
+        {
+            "direction": 2,
+            "timing": 49.57866668701172
+        },
+        {
+            "direction": 4,
+            "timing": 49.749332427978519
+        },
+        {
+            "direction": 1,
+            "timing": 49.91999816894531
+        },
+        {
+            "direction": 4,
+            "timing": 50.43199920654297
+        },
+        {
+            "direction": 1,
+            "timing": 50.58133316040039
+        },
+        {
+            "direction": 4,
+            "timing": 50.6879997253418
+        },
+        {
+            "direction": 1,
+            "timing": 50.90133285522461
+        },
+        {
+            "direction": 4,
+            "timing": 51.071998596191409
+        },
+        {
+            "direction": 1,
+            "timing": 51.413333892822269
+        },
+        {
+            "direction": 4,
+            "timing": 51.49866485595703
+        },
+        {
+            "direction": 1,
+            "timing": 51.69066619873047
+        },
+        {
+            "direction": 4,
+            "timing": 51.882667541503909
+        },
+        {
+            "direction": 1,
+            "timing": 52.181331634521487
+        },
+        {
+            "direction": 4,
+            "timing": 52.266666412353519
+        },
+        {
+            "direction": 1,
+            "timing": 52.3946647644043
+        },
+        {
+            "direction": 4,
+            "timing": 52.56533432006836
+        },
+        {
+            "direction": 1,
+            "timing": 52.736000061035159
+        },
+        {
+            "direction": 4,
+            "timing": 52.94933319091797
+        },
+        {
+            "direction": 1,
+            "timing": 53.54666519165039
+        },
+        {
+            "direction": 4,
+            "timing": 53.63199996948242
+        },
+        {
+            "direction": 1,
+            "timing": 53.73866653442383
+        },
+        {
+            "direction": 4,
+            "timing": 53.845333099365237
+        },
+        {
+            "direction": 1,
+            "timing": 53.930667877197269
+        },
+        {
+            "direction": 4,
+            "timing": 54.03733444213867
+        },
+        {
+            "direction": 1,
+            "timing": 54.14400100708008
+        },
+        {
+            "direction": 4,
+            "timing": 54.20800018310547
+        },
+        {
+            "direction": 1,
+            "timing": 54.314666748046878
+        },
+        {
+            "direction": 4,
+            "timing": 54.42133331298828
+        },
+        {
+            "direction": 1,
+            "timing": 54.48533248901367
+        },
+        {
+            "direction": 4,
+            "timing": 54.5706672668457
+        },
+        {
+            "direction": 1,
+            "timing": 54.634666442871097
+        },
+        {
+            "direction": 4,
+            "timing": 54.698665618896487
+        },
+        {
+            "direction": 1,
+            "timing": 54.762664794921878
+        },
+        {
+            "direction": 4,
+            "timing": 54.86933517456055
+        },
+        {
+            "direction": 1,
+            "timing": 54.89066696166992
+        },
+        {
+            "direction": 4,
+            "timing": 54.99733352661133
+        },
+        {
+            "direction": 1,
+            "timing": 54.99733352661133
+        },
+        {
+            "direction": 4,
+            "timing": 55.12533187866211
+        },
+        {
+            "direction": 1,
+            "timing": 55.12533187866211
+        },
+        {
+            "direction": 1,
+            "timing": 55.21066665649414
+        },
+        {
+            "direction": 4,
+            "timing": 55.253334045410159
+        },
+        {
+            "direction": 1,
+            "timing": 55.36000061035156
+        },
+        {
+            "direction": 4,
+            "timing": 55.42399978637695
+        },
+        {
+            "direction": 1,
+            "timing": 55.509334564208987
+        },
+        {
+            "direction": 4,
+            "timing": 55.551998138427737
+        },
+        {
+            "direction": 1,
+            "timing": 55.61600112915039
+        },
+        {
+            "direction": 4,
+            "timing": 55.701332092285159
+        },
+        {
+            "direction": 1,
+            "timing": 55.76533508300781
+        },
+        {
+            "direction": 4,
+            "timing": 55.85066604614258
+        },
+        {
+            "direction": 4,
+            "timing": 56.0
+        },
+        {
+            "direction": 1,
+            "timing": 56.08533477783203
+        },
+        {
+            "direction": 1,
+            "timing": 59.17866516113281
+        },
+        {
+            "direction": 3,
+            "timing": 59.797332763671878
+        },
+        {
+            "direction": 1,
+            "timing": 59.9466667175293
+        },
+        {
+            "direction": 3,
+            "timing": 60.15999984741211
+        },
+        {
+            "direction": 1,
+            "timing": 60.28799819946289
+        },
+        {
+            "direction": 4,
+            "timing": 60.608001708984378
+        },
+        {
+            "direction": 1,
+            "timing": 60.82133483886719
+        },
+        {
+            "direction": 4,
+            "timing": 61.03466796875
+        },
+        {
+            "direction": 1,
+            "timing": 61.22666549682617
+        },
+        {
+            "direction": 3,
+            "timing": 61.439998626708987
+        },
+        {
+            "direction": 2,
+            "timing": 61.6533317565918
+        },
+        {
+            "direction": 4,
+            "timing": 61.88800048828125
+        },
+        {
+            "direction": 1,
+            "timing": 62.10133361816406
+        },
+        {
+            "direction": 3,
+            "timing": 62.27199935913086
+        },
+        {
+            "direction": 2,
+            "timing": 62.634666442871097
+        },
+        {
+            "direction": 4,
+            "timing": 63.0186653137207
+        },
+        {
+            "direction": 1,
+            "timing": 63.38133239746094
+        },
+        {
+            "direction": 3,
+            "timing": 63.8293342590332
+        },
+        {
+            "direction": 2,
+            "timing": 64.17066955566406
+        },
+        {
+            "direction": 4,
+            "timing": 64.57599639892578
+        },
+        {
+            "direction": 1,
+            "timing": 64.93866729736328
+        },
+        {
+            "direction": 3,
+            "timing": 65.34400177001953
+        },
+        {
+            "direction": 2,
+            "timing": 65.68533325195313
+        },
+        {
+            "direction": 4,
+            "timing": 66.11199951171875
+        },
+        {
+            "direction": 1,
+            "timing": 66.49600219726563
+        },
+        {
+            "direction": 3,
+            "timing": 66.87999725341797
+        },
+        {
+            "direction": 2,
+            "timing": 67.26399993896485
+        },
+        {
+            "direction": 4,
+            "timing": 67.64800262451172
+        },
+        {
+            "direction": 1,
+            "timing": 67.90399932861328
+        },
+        {
+            "direction": 4,
+            "timing": 68.05333709716797
+        },
+        {
+            "direction": 2,
+            "timing": 68.28800201416016
+        },
+        {
+            "direction": 3,
+            "timing": 68.43733215332031
+        },
+        {
+            "direction": 1,
+            "timing": 68.7786636352539
+        },
+        {
+            "direction": 4,
+            "timing": 68.97066497802735
+        },
+        {
+            "direction": 2,
+            "timing": 69.22666931152344
+        },
+        {
+            "direction": 3,
+            "timing": 69.52532958984375
+        },
+        {
+            "direction": 1,
+            "timing": 69.7386703491211
+        },
+        {
+            "direction": 4,
+            "timing": 69.9520034790039
+        },
+        {
+            "direction": 2,
+            "timing": 70.91200256347656
+        },
+        {
+            "direction": 3,
+            "timing": 70.99732971191406
+        },
+        {
+            "direction": 2,
+            "timing": 71.10399627685547
+        },
+        {
+            "direction": 3,
+            "timing": 71.16799926757813
+        },
+        {
+            "direction": 2,
+            "timing": 71.23200225830078
+        },
+        {
+            "direction": 3,
+            "timing": 71.33866882324219
+        },
+        {
+            "direction": 2,
+            "timing": 71.36000061035156
+        },
+        {
+            "direction": 3,
+            "timing": 71.4453353881836
+        },
+        {
+            "direction": 2,
+            "timing": 71.87200164794922
+        },
+        {
+            "direction": 4,
+            "timing": 72.27733612060547
+        },
+        {
+            "direction": 1,
+            "timing": 72.63999938964844
+        },
+        {
+            "direction": 4,
+            "timing": 73.04533386230469
+        },
+        {
+            "direction": 1,
+            "timing": 73.40799713134766
+        },
+        {
+            "direction": 3,
+            "timing": 73.83466339111328
+        },
+        {
+            "direction": 2,
+            "timing": 74.21866607666016
+        },
+        {
+            "direction": 4,
+            "timing": 74.4106674194336
+        },
+        {
+            "direction": 1,
+            "timing": 74.58133697509766
+        },
+        {
+            "direction": 3,
+            "timing": 74.96533203125
+        },
+        {
+            "direction": 2,
+            "timing": 75.34933471679688
+        },
+        {
+            "direction": 4,
+            "timing": 75.73332977294922
+        },
+        {
+            "direction": 1,
+            "timing": 75.94666290283203
+        },
+        {
+            "direction": 3,
+            "timing": 76.13866424560547
+        },
+        {
+            "direction": 2,
+            "timing": 76.50133514404297
+        },
+        {
+            "direction": 4,
+            "timing": 76.90666961669922
+        },
+        {
+            "direction": 1,
+            "timing": 77.24800109863281
+        },
+        {
+            "direction": 3,
+            "timing": 77.46133422851563
+        },
+        {
+            "direction": 2,
+            "timing": 77.67466735839844
+        },
+        {
+            "direction": 4,
+            "timing": 78.0373306274414
+        },
+        {
+            "direction": 1,
+            "timing": 78.25066375732422
+        },
+        {
+            "direction": 3,
+            "timing": 78.42133331298828
+        },
+        {
+            "direction": 2,
+            "timing": 78.82666778564453
+        },
+        {
+            "direction": 4,
+            "timing": 78.99732971191406
+        },
+        {
+            "direction": 1,
+            "timing": 79.16799926757813
+        },
+        {
+            "direction": 1,
+            "timing": 79.61599731445313
+        },
+        {
+            "direction": 4,
+            "timing": 79.95733642578125
+        },
+        {
+            "direction": 2,
+            "timing": 80.14933013916016
+        },
+        {
+            "direction": 3,
+            "timing": 80.36266326904297
+        },
+        {
+            "direction": 1,
+            "timing": 80.51200103759766
+        },
+        {
+            "direction": 4,
+            "timing": 80.68266296386719
+        },
+        {
+            "direction": 1,
+            "timing": 81.2586669921875
+        },
+        {
+            "direction": 3,
+            "timing": 81.85600280761719
+        },
+        {
+            "direction": 1,
+            "timing": 83.79733276367188
+        },
+        {
+            "direction": 3,
+            "timing": 84.35199737548828
+        },
+        {
+            "direction": 2,
+            "timing": 84.94933319091797
+        },
+        {
+            "direction": 1,
+            "timing": 86.86933135986328
+        },
+        {
+            "direction": 4,
+            "timing": 87.46666717529297
+        },
+        {
+            "direction": 2,
+            "timing": 88.36266326904297
+        },
+        {
+            "direction": 4,
+            "timing": 88.66133117675781
+        },
+        {
+            "direction": 1,
+            "timing": 89.98400115966797
+        },
+        {
+            "direction": 3,
+            "timing": 90.53866577148438
+        },
+        {
+            "direction": 2,
+            "timing": 91.3066635131836
+        },
+        {
+            "direction": 1,
+            "timing": 93.05599975585938
+        },
+        {
+            "direction": 4,
+            "timing": 93.65333557128906
+        },
+        {
+            "direction": 1,
+            "timing": 94.12266540527344
+        },
+        {
+            "direction": 4,
+            "timing": 96.12799835205078
+        },
+        {
+            "direction": 1,
+            "timing": 96.76799774169922
+        },
+        {
+            "direction": 2,
+            "timing": 97.27999877929688
+        },
+        {
+            "direction": 4,
+            "timing": 99.2213363647461
+        },
+        {
+            "direction": 1,
+            "timing": 99.86133575439453
+        },
+        {
+            "direction": 4,
+            "timing": 100.60800170898438
+        },
+        {
+            "direction": 1,
+            "timing": 102.22933197021485
+        },
+        {
+            "direction": 4,
+            "timing": 102.82666778564453
+        },
+        {
+            "direction": 1,
+            "timing": 103.33866882324219
+        },
+        {
+            "direction": 4,
+            "timing": 103.63733673095703
+        },
+        {
+            "direction": 2,
+            "timing": 105.38666534423828
+        },
+        {
+            "direction": 4,
+            "timing": 105.72799682617188
+        },
+        {
+            "direction": 1,
+            "timing": 106.8586654663086
+        },
+        {
+            "direction": 3,
+            "timing": 107.2213363647461
+        },
+        {
+            "direction": 1,
+            "timing": 107.62666320800781
+        },
+        {
+            "direction": 4,
+            "timing": 108.43733215332031
+        },
+        {
+            "direction": 1,
+            "timing": 108.80000305175781
+        },
+        {
+            "direction": 3,
+            "timing": 109.20532989501953
+        },
+        {
+            "direction": 1,
+            "timing": 109.99466705322266
+        },
+        {
+            "direction": 4,
+            "timing": 110.33599853515625
+        },
+        {
+            "direction": 2,
+            "timing": 110.7413330078125
+        },
+        {
+            "direction": 3,
+            "timing": 111.50933074951172
+        },
+        {
+            "direction": 1,
+            "timing": 111.87200164794922
+        },
+        {
+            "direction": 4,
+            "timing": 112.25599670410156
+        },
+        {
+            "direction": 1,
+            "timing": 113.10933685302735
+        },
+        {
+            "direction": 3,
+            "timing": 113.40799713134766
+        },
+        {
+            "direction": 4,
+            "timing": 113.79199981689453
+        },
+        {
+            "direction": 1,
+            "timing": 114.58133697509766
+        },
+        {
+            "direction": 2,
+            "timing": 114.94400024414063
+        },
+        {
+            "direction": 4,
+            "timing": 115.3280029296875
+        },
+        {
+            "direction": 4,
+            "timing": 116.16000366210938
+        },
+        {
+            "direction": 2,
+            "timing": 116.4800033569336
+        },
+        {
+            "direction": 3,
+            "timing": 116.86399841308594
+        },
+        {
+            "direction": 1,
+            "timing": 117.71733093261719
+        },
+        {
+            "direction": 4,
+            "timing": 118.0373306274414
+        },
+        {
+            "direction": 2,
+            "timing": 118.44266510009766
+        },
+        {
+            "direction": 4,
+            "timing": 119.2106704711914
+        },
+        {
+            "direction": 1,
+            "timing": 119.552001953125
+        },
+        {
+            "direction": 3,
+            "timing": 119.95733642578125
+        },
+        {
+            "direction": 4,
+            "timing": 120.72533416748047
+        },
+        {
+            "direction": 1,
+            "timing": 121.13066864013672
+        },
+        {
+            "direction": 2,
+            "timing": 121.49333190917969
+        },
+        {
+            "direction": 3,
+            "timing": 122.28266906738281
+        },
+        {
+            "direction": 1,
+            "timing": 122.64533233642578
+        },
+        {
+            "direction": 4,
+            "timing": 123.05066680908203
+        },
+        {
+            "direction": 3,
+            "timing": 123.83999633789063
+        },
+        {
+            "direction": 1,
+            "timing": 124.18133544921875
+        },
+        {
+            "direction": 4,
+            "timing": 124.586669921875
+        },
+        {
+            "direction": 3,
+            "timing": 125.3759994506836
+        },
+        {
+            "direction": 1,
+            "timing": 125.69599914550781
+        },
+        {
+            "direction": 2,
+            "timing": 126.08000183105469
+        },
+        {
+            "direction": 3,
+            "timing": 126.8479995727539
+        },
+        {
+            "direction": 1,
+            "timing": 127.27466583251953
+        },
+        {
+            "direction": 4,
+            "timing": 127.6586685180664
+        },
+        {
+            "direction": 3,
+            "timing": 128.447998046875
+        },
+        {
+            "direction": 2,
+            "timing": 128.78933715820313
+        },
+        {
+            "direction": 4,
+            "timing": 129.15199279785157
+        },
+        {
+            "direction": 1,
+            "timing": 129.98399353027345
+        },
+        {
+            "direction": 3,
+            "timing": 130.32533264160157
+        },
+        {
+            "direction": 4,
+            "timing": 130.68800354003907
+        },
+        {
+            "direction": 1,
+            "timing": 131.49867248535157
+        },
+        {
+            "direction": 3,
+            "timing": 131.861328125
+        },
+        {
+            "direction": 4,
+            "timing": 132.24533081054688
+        },
+        {
+            "direction": 1,
+            "timing": 133.05599975585938
+        },
+        {
+            "direction": 3,
+            "timing": 133.3973388671875
+        },
+        {
+            "direction": 4,
+            "timing": 133.75999450683595
+        },
+        {
+            "direction": 1,
+            "timing": 134.5919952392578
+        },
+        {
+            "direction": 2,
+            "timing": 134.9759979248047
+        },
+        {
+            "direction": 3,
+            "timing": 135.3386688232422
+        },
+        {
+            "direction": 1,
+            "timing": 136.0853271484375
+        },
+        {
+            "direction": 4,
+            "timing": 136.49066162109376
+        },
+        {
+            "direction": 2,
+            "timing": 136.91732788085938
+        },
+        {
+            "direction": 1,
+            "timing": 137.68533325195313
+        },
+        {
+            "direction": 4,
+            "timing": 138.0693359375
+        },
+        {
+            "direction": 2,
+            "timing": 138.41065979003907
+        },
+        {
+            "direction": 4,
+            "timing": 139.1786651611328
+        },
+        {
+            "direction": 3,
+            "timing": 139.58399963378907
+        },
+        {
+            "direction": 2,
+            "timing": 139.9893341064453
+        },
+        {
+            "direction": 3,
+            "timing": 140.73599243164063
+        },
+        {
+            "direction": 1,
+            "timing": 141.14132690429688
+        },
+        {
+            "direction": 2,
+            "timing": 141.52532958984376
+        },
+        {
+            "direction": 3,
+            "timing": 142.2933349609375
+        },
+        {
+            "direction": 2,
+            "timing": 142.67733764648438
+        },
+        {
+            "direction": 4,
+            "timing": 143.06134033203126
+        },
+        {
+            "direction": 1,
+            "timing": 145.343994140625
+        },
+        {
+            "direction": 3,
+            "timing": 145.72799682617188
+        },
+        {
+            "direction": 2,
+            "timing": 146.11199951171876
+        },
+        {
+            "direction": 4,
+            "timing": 146.49600219726563
+        },
+        {
+            "direction": 1,
+            "timing": 146.90133666992188
+        },
+        {
+            "direction": 4,
+            "timing": 147.24266052246095
+        },
+        {
+            "direction": 2,
+            "timing": 147.66932678222657
+        },
+        {
+            "direction": 3,
+            "timing": 148.03199768066407
+        },
+        {
+            "direction": 1,
+            "timing": 148.4586639404297
+        },
+        {
+            "direction": 4,
+            "timing": 148.8000030517578
+        },
+        {
+            "direction": 2,
+            "timing": 149.20533752441407
+        },
+        {
+            "direction": 3,
+            "timing": 149.5679931640625
+        },
+        {
+            "direction": 1,
+            "timing": 149.97332763671876
+        },
+        {
+            "direction": 4,
+            "timing": 150.2933349609375
+        },
+        {
+            "direction": 2,
+            "timing": 150.72000122070313
+        },
+        {
+            "direction": 3,
+            "timing": 151.10400390625
+        },
+        {
+            "direction": 1,
+            "timing": 151.48800659179688
+        },
+        {
+            "direction": 4,
+            "timing": 151.8719940185547
+        },
+        {
+            "direction": 2,
+            "timing": 152.2986602783203
+        },
+        {
+            "direction": 3,
+            "timing": 152.6613311767578
+        },
+        {
+            "direction": 1,
+            "timing": 153.0453338623047
+        },
+        {
+            "direction": 4,
+            "timing": 153.4080047607422
+        },
+        {
+            "direction": 2,
+            "timing": 153.8346710205078
+        },
+        {
+            "direction": 3,
+            "timing": 154.1546630859375
+        },
+        {
+            "direction": 1,
+            "timing": 154.53866577148438
+        },
+        {
+            "direction": 4,
+            "timing": 154.96533203125
+        },
+        {
+            "direction": 2,
+            "timing": 155.34933471679688
+        },
+        {
+            "direction": 3,
+            "timing": 155.73333740234376
+        },
+        {
+            "direction": 1,
+            "timing": 156.138671875
+        },
+        {
+            "direction": 4,
+            "timing": 156.47999572753907
+        },
+        {
+            "direction": 2,
+            "timing": 156.9066619873047
+        },
+        {
+            "direction": 3,
+            "timing": 157.2693328857422
+        },
+        {
+            "direction": 1,
+            "timing": 157.65333557128907
+        },
+        {
+            "direction": 4,
+            "timing": 158.22933959960938
+        },
+        {
+            "direction": 1,
+            "timing": 158.33599853515626
+        },
+        {
+            "direction": 3,
+            "timing": 158.4426727294922
+        },
+        {
+            "direction": 2,
+            "timing": 158.6133270263672
+        },
+        {
+            "direction": 4,
+            "timing": 158.78399658203126
+        },
+        {
+            "direction": 1,
+            "timing": 159.06134033203126
+        },
+        {
+            "direction": 3,
+            "timing": 159.14666748046876
+        },
+        {
+            "direction": 2,
+            "timing": 159.25332641601563
+        },
+        {
+            "direction": 4,
+            "timing": 159.4239959716797
+        },
+        {
+            "direction": 1,
+            "timing": 159.552001953125
+        },
+        {
+            "direction": 3,
+            "timing": 159.7866668701172
+        },
+        {
+            "direction": 2,
+            "timing": 159.8719940185547
+        },
+        {
+            "direction": 4,
+            "timing": 159.95733642578126
+        },
+        {
+            "direction": 1,
+            "timing": 160.0853271484375
+        },
+        {
+            "direction": 3,
+            "timing": 160.25599670410157
+        },
+        {
+            "direction": 2,
+            "timing": 160.61866760253907
+        },
+        {
+            "direction": 4,
+            "timing": 161.23733520507813
+        },
+        {
+            "direction": 1,
+            "timing": 161.343994140625
+        },
+        {
+            "direction": 3,
+            "timing": 161.45066833496095
+        },
+        {
+            "direction": 2,
+            "timing": 161.53599548339845
+        },
+        {
+            "direction": 3,
+            "timing": 161.66400146484376
+        },
+        {
+            "direction": 2,
+            "timing": 161.72799682617188
+        },
+        {
+            "direction": 3,
+            "timing": 161.8346710205078
+        },
+        {
+            "direction": 2,
+            "timing": 161.9413299560547
+        },
+        {
+            "direction": 3,
+            "timing": 162.02667236328126
+        },
+        {
+            "direction": 1,
+            "timing": 162.19732666015626
+        },
+        {
+            "direction": 4,
+            "timing": 162.2826690673828
+        },
+        {
+            "direction": 1,
+            "timing": 162.3679962158203
+        },
+        {
+            "direction": 3,
+            "timing": 162.49600219726563
+        },
+        {
+            "direction": 2,
+            "timing": 162.517333984375
+        },
+        {
+            "direction": 3,
+            "timing": 162.62399291992188
+        },
+        {
+            "direction": 2,
+            "timing": 162.6666717529297
+        },
+        {
+            "direction": 3,
+            "timing": 162.77333068847657
+        },
+        {
+            "direction": 2,
+            "timing": 162.8373260498047
+        },
+        {
+            "direction": 3,
+            "timing": 162.92266845703126
+        },
+        {
+            "direction": 2,
+            "timing": 163.00799560546876
+        },
+        {
+            "direction": 3,
+            "timing": 163.07200622558595
+        },
+        {
+            "direction": 2,
+            "timing": 163.13600158691407
+        },
+        {
+            "direction": 3,
+            "timing": 163.22132873535157
+        },
+        {
+            "direction": 2,
+            "timing": 163.3280029296875
+        },
+        {
+            "direction": 3,
+            "timing": 163.34933471679688
+        },
+        {
+            "direction": 2,
+            "timing": 163.43466186523438
+        },
+        {
+            "direction": 3,
+            "timing": 163.52000427246095
+        },
+        {
+            "direction": 2,
+            "timing": 163.60533142089845
+        },
+        {
+            "direction": 3,
+            "timing": 163.66932678222657
+        },
+        {
+            "direction": 1,
+            "timing": 164.33067321777345
+        },
+        {
+            "direction": 4,
+            "timing": 164.4373321533203
+        },
+        {
+            "direction": 1,
+            "timing": 164.50132751464845
+        },
+        {
+            "direction": 3,
+            "timing": 164.71466064453126
+        },
+        {
+            "direction": 2,
+            "timing": 164.9066619873047
+        },
+        {
+            "direction": 4,
+            "timing": 165.1199951171875
+        },
+        {
+            "direction": 1,
+            "timing": 165.2480010986328
+        },
+        {
+            "direction": 3,
+            "timing": 165.3546600341797
+        },
+        {
+            "direction": 2,
+            "timing": 165.54666137695313
+        },
+        {
+            "direction": 4,
+            "timing": 165.9306640625
+        },
+        {
+            "direction": 1,
+            "timing": 166.03733825683595
+        },
+        {
+            "direction": 3,
+            "timing": 166.1653289794922
+        },
+        {
+            "direction": 2,
+            "timing": 166.35733032226563
+        },
+        {
+            "direction": 4,
+            "timing": 166.5066680908203
+        },
+        {
+            "direction": 1,
+            "timing": 166.67733764648438
+        },
+        {
+            "direction": 3,
+            "timing": 166.8906707763672
+        },
+        {
+            "direction": 2,
+            "timing": 167.10400390625
+        },
+        {
+            "direction": 4,
+            "timing": 167.48800659179688
+        },
+        {
+            "direction": 1,
+            "timing": 167.57333374023438
+        },
+        {
+            "direction": 4,
+            "timing": 168.42666625976563
+        },
+        {
+            "direction": 1,
+            "timing": 169.15199279785157
+        },
+        {
+            "direction": 1,
+            "timing": 169.9199981689453
+        },
+        {
+            "direction": 4,
+            "timing": 170.70933532714845
+        },
+        {
+            "direction": 1,
+            "timing": 171.49867248535157
+        },
+        {
+            "direction": 4,
+            "timing": 171.9040069580078
+        },
+        {
+            "direction": 1,
+            "timing": 172.309326171875
+        },
+        {
+            "direction": 4,
+            "timing": 172.65066528320313
+        },
+        {
+            "direction": 1,
+            "timing": 173.03466796875
+        },
+        {
+            "direction": 3,
+            "timing": 173.41867065429688
+        },
+        {
+            "direction": 2,
+            "timing": 173.7813262939453
+        },
+        {
+            "direction": 4,
+            "timing": 174.1653289794922
+        },
+        {
+            "direction": 1,
+            "timing": 174.57066345214845
+        },
+        {
+            "direction": 3,
+            "timing": 174.9759979248047
+        },
+        {
+            "direction": 2,
+            "timing": 175.36000061035157
+        },
+        {
+            "direction": 4,
+            "timing": 175.74400329589845
+        },
+        {
+            "direction": 1,
+            "timing": 176.1280059814453
+        },
+        {
+            "direction": 3,
+            "timing": 176.51199340820313
+        },
+        {
+            "direction": 2,
+            "timing": 176.87466430664063
+        },
+        {
+            "direction": 4,
+            "timing": 177.2586669921875
+        },
+        {
+            "direction": 1,
+            "timing": 177.64266967773438
+        },
+        {
+            "direction": 3,
+            "timing": 178.04800415039063
+        },
+        {
+            "direction": 2,
+            "timing": 178.41065979003907
+        },
+        {
+            "direction": 4,
+            "timing": 178.8373260498047
+        },
+        {
+            "direction": 1,
+            "timing": 179.1786651611328
+        },
+        {
+            "direction": 3,
+            "timing": 179.58399963378907
+        },
+        {
+            "direction": 2,
+            "timing": 179.96800231933595
+        },
+        {
+            "direction": 4,
+            "timing": 180.33067321777345
+        },
+        {
+            "direction": 1,
+            "timing": 180.73599243164063
+        },
+        {
+            "direction": 3,
+            "timing": 181.09866333007813
+        },
+        {
+            "direction": 2,
+            "timing": 181.50399780273438
+        },
+        {
+            "direction": 4,
+            "timing": 181.8453369140625
+        },
+        {
+            "direction": 1,
+            "timing": 183.80799865722657
+        },
+        {
+            "direction": 4,
+            "timing": 184.17066955566407
+        },
+        {
+            "direction": 2,
+            "timing": 184.5973358154297
+        },
+        {
+            "direction": 3,
+            "timing": 184.93865966796876
+        },
+        {
+            "direction": 1,
+            "timing": 185.36532592773438
+        },
+        {
+            "direction": 4,
+            "timing": 185.7066650390625
+        },
+        {
+            "direction": 2,
+            "timing": 186.32533264160157
+        },
+        {
+            "direction": 3,
+            "timing": 186.3893280029297
+        },
+        {
+            "direction": 2,
+            "timing": 186.47467041015626
+        },
+        {
+            "direction": 3,
+            "timing": 186.55999755859376
+        },
+        {
+            "direction": 2,
+            "timing": 186.62399291992188
+        },
+        {
+            "direction": 3,
+            "timing": 186.70933532714845
+        },
+        {
+            "direction": 2,
+            "timing": 186.7519989013672
+        },
+        {
+            "direction": 3,
+            "timing": 186.85867309570313
+        },
+        {
+            "direction": 1,
+            "timing": 187.22132873535157
+        },
+        {
+            "direction": 4,
+            "timing": 187.58399963378907
+        },
+        {
+            "direction": 1,
+            "timing": 187.9893341064453
+        },
+        {
+            "direction": 4,
+            "timing": 188.41600036621095
+        },
+        {
+            "direction": 1,
+            "timing": 188.77867126464845
+        },
+        {
+            "direction": 4,
+            "timing": 189.1840057373047
+        },
+        {
+            "direction": 2,
+            "timing": 189.6106719970703
+        },
+        {
+            "direction": 3,
+            "timing": 189.75999450683595
+        },
+        {
+            "direction": 1,
+            "timing": 189.99465942382813
+        },
+        {
+            "direction": 4,
+            "timing": 190.31466674804688
+        },
+        {
+            "direction": 1,
+            "timing": 190.69866943359376
+        },
+        {
+            "direction": 3,
+            "timing": 191.10400390625
+        },
+        {
+            "direction": 2,
+            "timing": 191.27467346191407
+        },
+        {
+            "direction": 4,
+            "timing": 191.48800659179688
+        },
+        {
+            "direction": 1,
+            "timing": 191.8506622314453
+        },
+        {
+            "direction": 3,
+            "timing": 192.25599670410157
+        },
+        {
+            "direction": 2,
+            "timing": 192.63999938964845
+        },
+        {
+            "direction": 4,
+            "timing": 192.85333251953126
+        },
+        {
+            "direction": 1,
+            "timing": 193.0240020751953
+        },
+        {
+            "direction": 3,
+            "timing": 193.4080047607422
+        },
+        {
+            "direction": 2,
+            "timing": 193.60000610351563
+        },
+        {
+            "direction": 4,
+            "timing": 193.79200744628907
+        },
+        {
+            "direction": 1,
+            "timing": 194.17599487304688
+        },
+        {
+            "direction": 3,
+            "timing": 194.34666442871095
+        },
+        {
+            "direction": 2,
+            "timing": 194.53866577148438
+        },
+        {
+            "direction": 4,
+            "timing": 194.90133666992188
+        },
+        {
+            "direction": 1,
+            "timing": 195.3280029296875
+        },
+        {
+            "direction": 3,
+            "timing": 195.5413360595703
+        },
+        {
+            "direction": 2,
+            "timing": 195.690673828125
+        },
+        {
+            "direction": 4,
+            "timing": 195.9040069580078
+        },
+        {
+            "direction": 1,
+            "timing": 196.0959930419922
+        },
+        {
+            "direction": 3,
+            "timing": 196.65066528320313
+        },
+        {
+            "direction": 2,
+            "timing": 196.86399841308595
+        },
+        {
+            "direction": 4,
+            "timing": 197.46133422851563
+        },
+        {
+            "direction": 1,
+            "timing": 197.6320037841797
+        },
+        {
+            "direction": 2,
+            "timing": 198.5919952392578
+        },
+        {
+            "direction": 3,
+            "timing": 198.67733764648438
+        },
+        {
+            "direction": 1,
+            "timing": 198.76266479492188
+        },
+        {
+            "direction": 4,
+            "timing": 198.82666015625
+        },
+        {
+            "direction": 2,
+            "timing": 198.93333435058595
+        },
+        {
+            "direction": 3,
+            "timing": 198.99732971191407
+        },
+        {
+            "direction": 2,
+            "timing": 199.06134033203126
+        },
+        {
+            "direction": 3,
+            "timing": 199.14666748046876
+        },
+        {
+            "direction": 2,
+            "timing": 199.50933837890626
+        },
+        {
+            "direction": 4,
+            "timing": 199.97866821289063
+        },
+        {
+            "direction": 1,
+            "timing": 200.32000732421876
+        },
+        {
+            "direction": 3,
+            "timing": 200.74667358398438
+        },
+        {
+            "direction": 1,
+            "timing": 201.8560028076172
+        },
+        {
+            "direction": 4,
+            "timing": 202.02667236328126
+        },
+        {
+            "direction": 2,
+            "timing": 202.24000549316407
+        },
+        {
+            "direction": 3,
+            "timing": 203.0506591796875
+        },
+        {
+            "direction": 2,
+            "timing": 203.413330078125
+        },
+        {
+            "direction": 4,
+            "timing": 203.58399963378907
+        },
+        {
+            "direction": 1,
+            "timing": 203.81866455078126
+        },
+        {
+            "direction": 3,
+            "timing": 204.54400634765626
+        },
+        {
+            "direction": 3,
+            "timing": 204.92799377441407
+        },
+        {
+            "direction": 4,
+            "timing": 205.14132690429688
+        },
+        {
+            "direction": 2,
+            "timing": 205.3333282470703
+        },
+        {
+            "direction": 2,
+            "timing": 205.73866271972657
+        },
+        {
+            "direction": 4,
+            "timing": 205.9306640625
+        },
+        {
+            "direction": 1,
+            "timing": 206.12266540527345
+        },
+        {
+            "direction": 4,
+            "timing": 206.48533630371095
+        },
+        {
+            "direction": 3,
+            "timing": 206.48533630371095
+        },
+        {
+            "direction": 1,
+            "timing": 206.656005859375
+        },
+        {
+            "direction": 4,
+            "timing": 206.8906707763672
+        },
+        {
+            "direction": 2,
+            "timing": 208.40533447265626
+        },
+        {
+            "direction": 3,
+            "timing": 209.19467163085938
+        },
+        {
+            "direction": 1,
+            "timing": 209.5786590576172
+        },
+        {
+            "direction": 4,
+            "timing": 209.74932861328126
+        },
+        {
+            "direction": 2,
+            "timing": 209.96266174316407
+        },
+        {
+            "direction": 3,
+            "timing": 210.68800354003907
+        },
+        {
+            "direction": 3,
+            "timing": 211.1146697998047
+        },
+        {
+            "direction": 1,
+            "timing": 211.3280029296875
+        },
+        {
+            "direction": 4,
+            "timing": 211.52000427246095
+        },
+        {
+            "direction": 3,
+            "timing": 211.9040069580078
+        },
+        {
+            "direction": 2,
+            "timing": 212.0959930419922
+        },
+        {
+            "direction": 4,
+            "timing": 212.26666259765626
+        },
+        {
+            "direction": 3,
+            "timing": 212.65066528320313
+        },
+        {
+            "direction": 4,
+            "timing": 212.99200439453126
+        },
+        {
+            "direction": 1,
+            "timing": 214.57066345214845
+        }
+    ]
+}
